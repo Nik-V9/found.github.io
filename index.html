@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="FoundVLAD: Exploring Foundation Models for Zero-shot Visual Place Recognition">
+  <meta name="keywords" content="FoundVLAD, Foundation Models, Visual Place Recognition, VPR, DINOv2, DINO, SAM">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FoundVLAD: Exploring Foundation Models for Zero-shot Visual Place Recognition</title>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://found.github.io">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">FoundVLAD: Exploring Foundation Models for Zero-shot Visual Place Recognition</h1>
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">
+              <a href="https://nik-v9.github.io/">Nikhil Keetha</a> (nkeetha),</span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/jay-karhade-70177a182/">Jay Karhade</a> (jkarhade)</span>
+          </div>
+
+          <div class="is-size-4 publication-authors">
+            <span class="author-block">CMU 16-824 (VLR) Course Project</span>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%"> -->
+        <img source src="./static/images/approach.png" />
+      <!-- </video> -->
+      <h2 class="subtitle has-text-centered">
+        <span class="coolname">FoundVLAD</span> leverages foundation model features to perform Zero-shot Visual Place Recognition.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Vocabulary Visualizations of Gardens Point Query Set</h2>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+
+      <div class="column has-text-centered">
+        <div class="content">
+          <h2 class="title is-3">DINO ViT-S8</h2>
+          <video id="dino_gardens" autoplay controls muted playsinline height="100%">
+            <source src="./static/videos/DINO_gardens.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+      <div class="column has-text-centered">
+        <div class="content">
+          <h2 class="title is-3">DINOv2 ViT-S14</h2>
+          <video id="dinov2_gardens" autoplay controls muted playsinline height="100%">
+            <source src="./static/videos/DINOv2_gardens.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+
+    <p></p>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Vocabulary Visualizations of different DINOv2 ViT-G14 Layers</h2>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="columns is-centered">
+
+      <div class="column has-text-centered">
+        <div class="content">
+          <h2 class="title is-3">Database Sample</h2>
+          <video id="dinov2_la_0" autoplay controls muted playsinline height="100%">
+            <source src="./static/videos/DINOv2_c32_layer_ablation.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="column has-text-centered">
+        <div class="content">
+          <h2 class="title is-3">Query Sample</h2>
+          <video id="dinov2_la_1" autoplay controls muted playsinline height="100%">
+            <source src="./static/videos/DINOv2_c32_layer_ablation_1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+
+    <p></p>
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Vocabulary Visualizations of different ViT Layers</h2>
+        <p></p>
+      </div>
+    </div>
+    
+    <div class="columns is-centered">
+
+      <div class="column has-text-centered">
+        <div class="content">
+          <h2 class="title is-3">DINO ViT-S8</h2>
+          <video id="dinov2_la_1" autoplay controls muted playsinline height="100%">
+            <source src="./static/videos/DINO_ViT_S_ablation.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+      <div class="column has-text-centered">
+        <div class="content">
+          <h2 class="title is-3">DINOv2 ViT-S14</h2>
+          <video id="dinov2_la_0" autoplay controls muted playsinline height="100%">
+            <source src="./static/videos/DINOv2_ViT_S_ablation.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+
+</section>
+
+<script type="text/javascript">
+  $(function() {
+  var screenWidth = $(window).width();
+  if (screenWidth >= 800) {
+    $('#gpt-video-1').attr('autoplay', 'autoplay');
+  }
+  if (screenWidth >= 800) {
+    $('#gpt-video-2').attr('autoplay', 'autoplay');
+  }
+  if (screenWidth >= 800) {
+    $('#click-query-icl').attr('autoplay', 'autoplay');
+  }
+});
+</script>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+        <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website adapted from the Nerfies templates, which is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a href="https://github.com/Nik-V9/found.github.io">source code</a> of this website,
+            we just ask that you link back to the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies source code</a> in the footer.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
